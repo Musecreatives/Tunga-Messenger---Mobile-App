@@ -4,6 +4,8 @@ import 'package:super_todo/pages/onboarding/onboarding.dart';
 import 'package:super_todo/styles/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'pages/Login.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -24,10 +26,12 @@ class MyApp extends StatelessWidget {
           ),
       ),
       themeMode: ThemeMode.dark,
+      debugShowCheckedModeBanner: false,
       initialRoute: SplashScreen.route,
       routes: {
         SplashScreen.route:(BuildContext context)=>SplashScreen(),
         OnBoarding.route:(BuildContext context)=>OnBoarding(),
+        Login.route: (BuildContext context) => Login()
       },
     );
   }

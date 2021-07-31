@@ -9,6 +9,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     void gotoOnBoarding() {
       Navigator.of(context).pushNamed(OnBoarding.route);
     }
