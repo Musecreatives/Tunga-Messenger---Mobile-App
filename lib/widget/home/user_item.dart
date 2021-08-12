@@ -16,7 +16,7 @@ class HomeUserItem extends StatelessWidget {
           Navigator.of(context).pushNamed(Chat.route);
         },
         leading: CircleAvatar(
-          child: Icon(CupertinoIcons.person),
+          child: IconButton(onPressed: () {}, icon: Icon(CupertinoIcons.person)),
         ),
         title: Row(
           children: [
